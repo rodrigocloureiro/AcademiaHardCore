@@ -1,0 +1,46 @@
+// Minha forma de fazer
+// .footer {
+
+//     footer {
+//         width: 100%;
+//         height: 70px;
+//         background-color: $primaryColor;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         margin-bottom: 20px;
+    
+//         p {
+//             max-width: 664px;
+//             text-align: center;
+//         }
+    
+//     }
+    
+//     .midias {
+//         display: flex;
+//         justify-content: center;
+//         column-gap: 15px;
+//         margin-bottom: 70px;
+//     }
+
+// }
+
+.footer {
+    background-color: $primaryColor;
+    padding: 15px;
+    text-align: center;
+
+    p {
+        max-width: 736px;
+        margin:  0 auto;
+    }
+}
+
+.midias {
+    margin-top: 20px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+}

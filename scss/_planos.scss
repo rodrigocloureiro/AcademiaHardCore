@@ -1,0 +1,149 @@
+.planos {
+    margin-top: 70px;
+    margin-bottom: 70px;
+
+    .header-planos {
+        text-align: center;
+        max-width: 736px;
+        margin: 0 auto;
+    }
+
+    .card-plano {
+        background-color: $light;
+        padding: 40px 30px;
+        margin-top: 20px;
+
+        h3 {
+            font-size: 36px;
+            color: $greyDark;
+            text-align: center;
+            margin: 0;
+        }
+
+        p {
+            color: $grey;
+            text-align: center;
+            margin: 0;
+        }
+
+        .preco {
+            font-size: 32px;
+            font-weight: 700;
+            color: $primaryColor;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            margin-bottom: 20px;
+            list-style-position: inside;
+            color: $greyDark;
+            font-size: 18px;
+        }
+
+        .btn {
+            display: block;
+            text-align: center;
+        }
+
+    }
+
+    .destaque {
+        position: relative; // não seria necessário por conta do -->transform: scale(1.1)<-- ele assume um papel de position quando "traz o elemento pra frente"
+        transform: scale(1.05); // nesse caso assume também um papel de position
+        background-color: #eee;
+
+        .preco {
+            transform: scale(1.5);
+        }
+
+        .selo {
+            width: 70px;
+            height: 70px;
+            background-color: $primaryColor;
+            border: 3px solid #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transform: rotate(22.53deg);
+            position: absolute;
+            top: -20px;
+            right: -10px;
+            box-shadow: 3px 3px 5px #000;
+
+            span {
+                color: #fff;
+                font-size: 18px;
+                line-height: 80%;
+            }
+
+        }
+
+    }
+
+}
+
+@media (max-width: 991px) {
+    .planos {
+
+        .cards {
+
+            .row {
+
+                .col-lg-4 {
+
+                    &:nth-child(2) {
+                        order: -1;
+                    }
+
+                }
+    
+            }
+
+        }
+
+        .destaque {
+            transform: scale(1);
+
+            .preco {
+                transform: scale(1);
+                font-size: 48px;
+            }
+
+            .selo {
+                top: 10px;
+                right: 10px;
+            }
+
+        }
+
+    }
+
+    .contato {
+
+        form {
+            margin-bottom: 15px;
+        }
+
+    }
+
+}
+
+@media (max-width: 1199px) {
+    .planos {
+
+        .cards {
+
+            h3 {
+                font-size: 34px;
+            }
+
+        }
+
+    }
+
+}

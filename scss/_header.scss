@@ -1,0 +1,156 @@
+.header {
+    width: 100%;
+    position: absolute;
+    padding: 30px 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu {
+
+        a {
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-left: 68px;
+            transition: 0.5s;
+
+            &:hover {
+                color: $primaryColor;
+            }
+            
+        }
+
+    }
+
+}
+
+.header-fixed {
+    position: fixed;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    padding: 5px 0;
+    transition: 0.3s;
+
+    .logo {
+
+        img {
+            height: 70px;
+        }
+
+    }
+
+}
+
+@media (max-width: 991px) {
+    .header {
+
+        .menu {
+            width: 100%;
+            height: 400px;
+            background-color: $primaryColor;
+            position: absolute;
+            top: 140px;
+            left: 0;
+            z-index: 1;
+            padding: 0 15px 25px 15px;
+            box-sizing: border-box;
+            transition: 0.5s;
+            transform: translateX(-100%) !important;
+        }
+
+        .menu-fixed {
+            top: 85px;
+            height: 250px;
+            background-color: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(5px);
+        }
+
+        .menu-open {
+            transform: translateX(0) !important;
+        }
+
+        .menu {
+            
+            a {
+                color: white;
+                display: block;
+                margin: 0;
+                padding: 15px 0;
+                border-bottom: 1px solid $light;
+
+                &:hover {
+                    color: $light;
+                }
+
+            }
+
+        }
+
+        .bar {
+            width: 30px;
+            height: 3px;
+            background-color: white;
+            margin-bottom: 3px;
+            border-radius: 5px;
+            transition: 0.5s;
+        }
+
+        .bar {
+
+            &:nth-child(2) {
+                width: 20px;
+            }
+
+        }
+
+        .bar:last-child {
+            width: 10px;
+        }
+
+        .clicado {
+            
+            .bar {
+                
+                &:first-child {
+                    transform: rotate(45deg) translate(0, 0);
+                    transition-delay: 0.5s;
+                }
+
+            }
+
+        }
+
+        .clicado {
+            
+            .bar {
+                
+                &:nth-child(2){
+                    opacity: 0;
+                    transform: translateX(-50px);
+                }
+            }
+        }
+
+        .clicado {
+            
+            .bar {
+                
+                &:last-child {
+                    width: 30px;
+                    transform: rotate(-45deg) translate(9px, -8px);
+                    transition-delay: 0.5s;
+                }
+
+            }
+
+        }
+
+    }
+
+}

@@ -1,0 +1,22 @@
+@mixin button($tipo) {
+    display: inline-block;
+    padding: 13px 50px 9px 50px;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: $font;
+    font-size: 18px;
+    border: none; // firefox
+    transition: 0.5s;
+
+    @if($tipo == 'btn-primary'){
+        background-color: $primaryColor; 
+    }
+    
+    @else if($tipo == 'btn-form'){
+        background-color: transparent;
+        border: 1px solid #ccc;
+    }
+
+}

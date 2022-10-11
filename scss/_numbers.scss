@@ -1,0 +1,33 @@
+.numbers {
+    position: relative; // para criar uma referência para o absolute
+    padding: 70px 0;
+
+    .card-number {
+        text-align: center;
+
+        p {
+            margin: 0;
+            font-size: 96px;
+            font-weight: 700;
+            color: $greyDark;
+            line-height: 100%;
+        }
+
+        span {
+            font-size: 48px;
+            font-weight: 700;
+            color: $grey;
+            position: relative;
+            top: -20px;
+        }
+
+    }
+
+    .img-atleta {
+        // posição em relação ao elemento pai (desde que este tenha position)
+        // caso contrário, será em relação ao body
+        position: absolute;
+        bottom: 0;
+    }
+
+}

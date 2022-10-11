@@ -1,0 +1,48 @@
+// UTILITÁRIOS
+.container {
+    max-width: 1140px !important;
+}
+
+@media (max-width: 1199px) {
+    .container {
+        box-sizing: border-box;
+    }
+
+}
+
+.btn {
+    @include button('btn-primary');
+
+    &:hover {
+        background-color: $primaryDark;
+    }
+
+}
+
+.bg-light {
+    background-color: $light;
+}
+
+.btn-outline {
+    padding: 11px 50px 7px 50px;
+    background-color: transparent;
+    border: 2px solid $primaryColor;
+    color: $primaryColor;
+
+    &:hover {
+        background-color: $primaryColor;
+        color: white;
+    }
+}
+
+.btn-form {
+    @include button('btn-form');
+    color: #ccc;
+
+    &:hover {
+        background-color: rgba($color: #cccccc, $alpha: 0.5);
+        color: white;
+    }
+
+}
+// UTILITÁRIOS
