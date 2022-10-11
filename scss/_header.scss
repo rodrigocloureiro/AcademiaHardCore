@@ -30,49 +30,45 @@
 }
 
 .header-fixed {
-    position: fixed;
-    z-index: 2;
-    background-color: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(5px);
-    padding: 5px 0;
     transition: 0.3s;
-
-    .logo {
-
-        img {
-            height: 70px;
-        }
-
-    }
-
 }
 
 @media (max-width: 991px) {
     .header {
+        background-color: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(5px);
+        padding: 15px 0;
+        position: fixed;
+        z-index: 2;
+
+        .logo {
+            
+            img {
+                height: 70px;
+            }
+    
+        }
 
         .menu {
             width: 100%;
             height: 400px;
-            background-color: $primaryColor;
+            background-color: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(5px);
             position: absolute;
-            top: 140px;
+            top: 95px;
             left: 0;
-            z-index: 1;
             padding: 0 15px 25px 15px;
             box-sizing: border-box;
-            transition: 0.5s;
-            transform: translateX(-100%) !important;
+            transition: 0.75s;
+            transform: translateY(-150%) !important;
         }
 
         .menu-fixed {
-            top: 85px;
             height: 250px;
-            background-color: rgba(0, 0, 0, 0.8);
-            backdrop-filter: blur(5px);
         }
 
         .menu-open {
-            transform: translateX(0) !important;
+            transform: translateY(0) !important;
         }
 
         .menu {
