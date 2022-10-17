@@ -1,77 +1,125 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 14 - Projeto Academia</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.2/css/bootstrap-grid.min.css">
+    <title>Aula 15 - Projeto Academia</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.2/css/bootstrap-grid.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.slider').bxSlider({
+                auto: true,
+                pause: 6000
+            });
+        });
+    </script>
+
     <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
     <header class="header">
-        
-        <div class="container"> <!-- CLASSES BOOTSTRAP => d-flex justify-content-between align-items-center -->
-            
+
+        <div class="container">
+            <!-- CLASSES BOOTSTRAP => d-flex justify-content-between align-items-center -->
+
             <div class="logo">
-                
+
                 <a href="index.html"><img src="img/logo.svg" alt="Logo Academia HardCore"></a>
 
             </div>
 
             <div class="btn-menu">
+
                 <div class="bar"></div>
+
                 <div class="bar"></div>
+
                 <div class="bar"></div>
+
             </div>
 
-            
             <nav class="menu">
 
-                <a href="#">Início</a>
+                <a href="#inicio">Início</a>
 
-                <a href="#">A Academia</a>
+                <a href="#academia">A Academia</a>
 
-                <a href="#">Nossos Planos</a>
+                <a href="#planos">Nossos Planos</a>
 
-                <a href="#">Fale Conosco</a>
+                <a href="#contato">Fale Conosco</a>
 
             </nav>
 
         </div>
     </header>
 
-    <div class="hero-section">
-        
-        <div class="container">
+    <div class="slider">
 
-            <h1>Lorem ipsum dolor sit amet, consectetur</h1>
-            
-            <p>Integer metus ante, blandit at odio ut, molestie iaculis sapien. Suspendisse placerat tincidunt feugiat Fusce sagittis vitae ex eu dictum. Nullam facilisis.</p>
-            
-            <a class="btn" href="#">Lorem Ipsum</a>
+        <div class="hero-section bg-1" id="inicio">
+
+            <div class="container">
+
+                <h1>Lorem ipsum dolor sit amet, consectetur</h1>
+
+                <p>Integer metus ante, blandit at odio ut, molestie iaculis sapien. Suspendisse placerat tincidunt
+                    feugiat Fusce sagittis vitae ex eu dictum. Nullam facilisis.</p>
+
+                <a class="btn" href="#">Lorem Ipsum</a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-section bg-2">
+
+            <div class="container">
+
+                <h1>Lorem ipsum dolor sit amet, consectetur</h1>
+
+                <p>Integer metus ante, blandit at odio ut, molestie iaculis sapien. Suspendisse placerat tincidunt
+                    feugiat Fusce sagittis vitae ex eu dictum. Nullam facilisis.</p>
+
+                <a class="btn" href="#">Lorem Ipsum</a>
+
+            </div>
 
         </div>
 
     </div>
 
-    <div class="container presentation">
-        
+    <div class="container presentation" id="academia">
+
         <div class="row align-items-center">
 
-            <div class="col-md-6"> <!-- md -> infix responsividade BOOTSTRAP -->
+            <div class="col-md-6">
+                <!-- md -> infix responsividade BOOTSTRAP -->
 
                 <img src="img/aluno.jpg" alt="Imagem de aluno">
 
             </div>
 
-            <div class="col-md-6"> <!-- md -> infix responsividade BOOTSTRAP -->
+            <div class="col-md-6">
+                <!-- md -> infix responsividade BOOTSTRAP -->
 
                 <h2>Lorem Ipsum Dolor</h2>
-                
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam imperdiet ac mi non pharetra. Suspendisse potenti. Sed tincidunt purus non aliquet molestie. Nam non blandit eros, eget mattis turpis.</p>
-                
-                <p>Mauris fringilla tincidunt massa, vel mollis ligula rhoncus ut. Nulla ac leo dolor. Aliquam a pretium magna. Sed at ullamcorper nibh. Etiam quis facilisis risus, vitae faucibus arcu. Sed quis metus varius, sagittis urna eget, volutpat urna.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam imperdiet ac mi non pharetra.
+                    Suspendisse potenti. Sed tincidunt purus non aliquet molestie. Nam non blandit eros, eget mattis
+                    turpis.</p>
+
+                <p>Mauris fringilla tincidunt massa, vel mollis ligula rhoncus ut. Nulla ac leo dolor. Aliquam a pretium
+                    magna. Sed at ullamcorper nibh. Etiam quis facilisis risus, vitae faucibus arcu. Sed quis metus
+                    varius, sagittis urna eget, volutpat urna.</p>
 
             </div>
 
@@ -86,30 +134,34 @@
             <div class="row">
 
                 <!-- <div class="col-lg-3 card-number"> lg -> infix responsividade BOOTSTRAP -->
-                <div class="col-md-4 col-lg-3 card-number"> <!-- md/lg -> infix responsividade BOOTSTRAP -->
+                <div class="col-md-4 col-lg-3 card-number">
+                    <!-- md/lg -> infix responsividade BOOTSTRAP -->
 
                     <p>+3k</p>
                     <span>Alunos</span>
-                
+
                 </div>
 
                 <!-- <div class="col-lg-3 card-number"> lg -> infix responsividade BOOTSTRAP -->
-                <div class="col-md-4 col-lg-3 card-number"> <!-- md/lg -> infix responsividade BOOTSTRAP -->
+                <div class="col-md-4 col-lg-3 card-number">
+                    <!-- md/lg -> infix responsividade BOOTSTRAP -->
 
                     <p>+10</p>
                     <span>Anos</span>
 
                 </div>
-                
+
                 <!-- <div class="col-lg-3 card-number"> lg -> infix responsividade BOOTSTRAP -->
-                <div class="col-md-4 col-lg-3 card-number"> <!-- md/lg -> infix responsividade BOOTSTRAP -->
+                <div class="col-md-4 col-lg-3 card-number">
+                    <!-- md/lg -> infix responsividade BOOTSTRAP -->
 
                     <p>23</p>
                     <span>Unidades</span>
 
                 </div>
-                
-                <div class="col-lg-3 d-lg-block d-none"> <!-- lg -> infix responsividade BOOTSTRAP -->
+
+                <div class="col-lg-3 d-lg-block d-none">
+                    <!-- lg -> infix responsividade BOOTSTRAP -->
 
                     <img class="img-atleta" src="img/atleta.png" alt="Imagem de atleta">
 
@@ -121,13 +173,15 @@
 
     </div>
 
-    <div class="container planos">
+    <div class="container planos" id="planos">
 
         <div class="header-planos">
 
             <h2>Lorem Ipsum Dolor</h2>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam imperdiet ac mi non pharetra. Suspendisse potenti. Sed tincidunt purus non aliquet molestie. Nam non blandit eros, eget mattis turpis. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam imperdiet ac mi non pharetra.
+                Suspendisse potenti. Sed tincidunt purus non aliquet molestie. Nam non blandit eros, eget mattis turpis.
+            </p>
 
         </div>
 
@@ -135,7 +189,8 @@
 
             <div class="row">
 
-                <div class="col-lg-4"> <!-- lg -> infix responsividade BOOTSTRAP -->
+                <div class="col-lg-4">
+                    <!-- lg -> infix responsividade BOOTSTRAP -->
 
                     <div class="card-plano">
 
@@ -165,7 +220,8 @@
 
                 </div>
 
-                <div class="col-lg-4"> <!-- lg -> infix responsividade BOOTSTRAP -->
+                <div class="col-lg-4">
+                    <!-- lg -> infix responsividade BOOTSTRAP -->
 
                     <div class="card-plano destaque">
 
@@ -201,7 +257,8 @@
 
                 </div>
 
-                <div class="col-lg-4"> <!-- lg -> infix responsividade BOOTSTRAP -->
+                <div class="col-lg-4">
+                    <!-- lg -> infix responsividade BOOTSTRAP -->
 
                     <div class="card-plano">
 
@@ -234,18 +291,20 @@
             </div>
 
         </div>
-        
+
     </div>
 
-    <div class="container contato">
+    <div class="container contato" id="contato">
 
         <div class="row">
 
-            <div class="col-lg-6"> <!-- lg -> infix responsividade BOOTSTRAP -->
+            <div class="col-lg-6">
+                <!-- lg -> infix responsividade BOOTSTRAP -->
 
                 <h2>Lorem Ipsum Dolor</h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam imperdiet ac mi non pharetra. Suspendisse potenti. Sed tincidunt purus non aliquet molestie. Nam non.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam imperdiet ac mi non pharetra.
+                    Suspendisse potenti. Sed tincidunt purus non aliquet molestie. Nam non.</p>
 
                 <form>
 
@@ -263,9 +322,13 @@
 
             </div>
 
-            <div class="col-lg-6"> <!-- lg -> infix responsividade BOOTSTRAP -->
+            <div class="col-lg-6">
+                <!-- lg -> infix responsividade BOOTSTRAP -->
 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14700.62667892332!2d-43.1764469!3d-22.9075915!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2f25c55275b328a9!2sCoti%20Inform%C3%A1tica!5e0!3m2!1spt-BR!2sbr!4v1665160449076!5m2!1spt-BR!2sbr" width="546" height="490" style="border:0; width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14700.62667892332!2d-43.1764469!3d-22.9075915!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2f25c55275b328a9!2sCoti%20Inform%C3%A1tica!5e0!3m2!1spt-BR!2sbr!4v1665160449076!5m2!1spt-BR!2sbr"
+                    width="546" height="490" style="border:0; width: 100%;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
 
             </div>
 
@@ -298,16 +361,17 @@
 
         <div class="footer">
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam imperdiet ac mi non pharetra. Suspendisse potenti. Sed tincidunt purus non aliquet molestie. Nam non.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam imperdiet ac mi non pharetra.
+                Suspendisse potenti. Sed tincidunt purus non aliquet molestie. Nam non.</p>
 
         </div>
 
         <div class="midias">
 
             <a href="#"><img src="img/icon facebook.svg" alt="Icone Facebook"></a>
-            
+
             <a href="#"><img src="img/icon twitter.svg" alt="Icone Twitter"></a>
-            
+
             <a href="#"><img src="img/icon youtube.svg" alt="Icone YouTube"></a>
 
         </div>
@@ -316,4 +380,5 @@
 
     <script src="js/script.js"></script>
 </body>
+
 </html>

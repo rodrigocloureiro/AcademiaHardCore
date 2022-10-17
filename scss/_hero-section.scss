@@ -1,7 +1,24 @@
-.hero-section {
+.bx-wrapper {
+    border: none;
+    box-shadow: none;
+}
+
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+    bottom: 20px;
+}
+
+.bg-1 {
     background-image: url(../img/Background.jpg);
-    background-size: cover;
     background-position: bottom left;
+}
+
+.bg-2 {
+    background-image: url(../img/Background-2.jpg);
+    background-position: bottom center;
+}
+
+.hero-section {
+    background-size: cover;
     height: 100vh; /* View Height (Tamanho da tela/navegador) -> Viewport */
     display: flex;
     align-items: center;
